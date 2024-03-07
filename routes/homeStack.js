@@ -19,7 +19,9 @@ export default function HomeStack(){
          
       >
       <Stack.Screen  name="Home"  options={{headerShown: false}}  component={Home} />
-      <Stack.Screen name="Review"  options={{headerShown: false}} component={Review} />
+      <Stack.Screen name="Review"  options={{headerShown: false}} component={Review} 
+    //   options={{  }}  
+      />
     
 
       

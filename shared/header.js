@@ -1,13 +1,15 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Image , ImageBackground} from 'react-native'
+import { globalStyles } from '../styles/global'
 
 
 
 export default function Header({title}){
     return(
-        <View style={styles.header}>
+        <ImageBackground  source={require("../assets/game_bg.png")} style={styles.header}>
+            <Image source={require("../assets/heart_logo.png")} style={globalStyles.headerImage} />
             <Text style={styles.headerText}>{title}</Text>
-        </View>
+        </ImageBackground>
     )
 }
 
